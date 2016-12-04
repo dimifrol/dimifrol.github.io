@@ -1,0 +1,74 @@
+html {
+  height: 100%;
+  background: black url(bg.gif) center no-repeat;
+  background-size: cover;
+}
+body {
+  color: white;
+  font-family: "Courier New", "Courier", "Monaco", sans-serif;
+  padding-top: 200px;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  font-size: 14px;
+  margin-bottom: 70px;
+}
+ul {
+    list-style: none;
+    font-size: 12px;
+}
+.container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadein 2s forwards;
+}
+.logo {
+    display: block;
+    margin-bottom: 10px;
+}
+.body {
+  font-size: 11px;
+  margin-bottom: 50px;
+}
+.navigation li {
+  margin-bottom: 20px;
+}
+.navigation a:hover {
+  background-color: red;
+  }
+  .navigation a {
+  transition-property: background-color;
+  transition-duration: .5s;
+  }
+.sociallinks li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding-right: 5px;
+}
+.sociallinks img {
+  max-width: 100%;
+}
+.sociallinks a {
+  opacity: 0.4;
+}
+.sociallinks a:hover {
+  opacity: 0.9;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
